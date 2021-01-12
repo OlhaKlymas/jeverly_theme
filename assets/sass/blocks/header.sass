@@ -1,0 +1,108 @@
+header
+  position: relative
+  width: 100%
+  height: auto
+  padding: 40px 0
+
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+  font-family: 'PlayfairDisplay Regular', sans-serif
+  color: $grey_text_color
+
+  .site-branding
+    width: 22%
+    height: 100%
+
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    .site-title
+      margin-left: 10px
+
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      text-transform: uppercase
+      padding-bottom: 0
+
+      .top-head
+        font-size: 1rem
+        color: $main_text_color
+        letter-spacing: 3px
+
+      .bottom-head
+        font-family: 'Lato', sans-serif
+        font-size: 0.83rem
+        letter-spacing: 1px
+
+  nav#site-navigation
+    text-transform: uppercase
+    font-size: 1rem
+
+    a
+      padding: 15px
+      color: $grey_text_color
+      border: 1px solid transparent
+      letter-spacing: 0.1rem
+
+    li:hover > a
+      border-color: $grey_text_color
+
+      &:after
+        transform: rotate(45deg)
+
+    .sub-menu
+      padding: 15px 0
+      flex-direction: column
+      background-color: $green_color
+
+      li
+        padding: 2px 15px
+
+      a
+        position: relative
+        padding: 8px 5px
+
+        font-size: 0.83rem
+        color: $primary
+
+      .sub-menu
+        margin-left: calc(100% - 10px)
+
+    .menu-item-has-children
+      position: relative
+
+      & > a:after
+        content: ''
+        position: absolute
+        top: 36%
+        right: 7px
+        width: 10px
+        height: 10px
+        border-right: 1px solid $grey_text_color
+        border-top: 1px solid $grey_text_color
+        transform: rotate(135deg)
+        transition: 0.5s
+
+    .nav-menu > .menu-item-has-children > a
+      width: calc(100% + 40px)
+
+      &:after
+        right: 0
+
+  hr.header-hr
+    position: absolute
+    bottom: 0
+    margin: 0
+
+    width: 100%
+    height: 1px
+    background-color: $grey_text_color
+
+    &:last-child
+      bottom: -5px

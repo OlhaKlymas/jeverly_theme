@@ -1,0 +1,138 @@
+#comments
+  width: $posts_width
+  margin: auto
+
+  .comments-title
+    margin: 30px 0
+
+    font-size: 1.2rem
+    font-family: 'PlayfairDisplay Bold'
+
+  ol.comment-list
+
+    .comment-body
+      position: relative
+      margin-bottom: 50px
+      padding-left: 80px
+
+    li .comment-author.vcard
+        display: flex
+
+        img
+          position: absolute
+          left: 0
+
+          width: 60px
+          height: 60px
+
+          object-fit: cover
+          border-radius: 50%
+
+        b.fn
+          font-size: 1.1rem
+          font-family: 'PlayfairDisplay Bold'
+
+    .comment-metadata
+      margin: 10px 0
+
+      font-family: 'Lato-Italic', sans-serif
+      font-size: 0.75rem
+
+      a
+        color: $grey_text_color
+        text-decoration: none
+
+    .comment-content
+      font-size: 1rem
+      line-height: 1.5
+      font-family: 'Lato', sans-serif
+      color: $grey_text_color
+
+    .reply a
+      position: relative
+      padding: 5px 3px
+      margin-left: 25px
+
+      background-color: $green-color
+
+      color: $primary
+      font-size: 0.5rem
+      letter-spacing: 0.1rem
+      font-family: 'PlayfairDisplay Regular', sans-serif
+      text-transform: uppercase
+      text-decoration: none
+
+      &:before
+        content: ''
+        position: absolute
+        top: 10px
+        left: -20px
+        width: 15px
+        height: 1px
+        background-color: $grey_text_color
+
+  .children
+    margin-left: 55px
+
+  hr.post-hr
+    position: relative
+    margin: 0 0 5px 0
+
+#cancel-comment-reply-link
+  font-size: 0.8rem
+  font-family: 'Lato-Italic', sans-serif
+  color: $grey_text_color
+  padding: 0 20px
+  text-decoration: none
+
+.comment-notes, .comment-form-url, .comment-form-cookies-consent, .says
+  display: none
+
+#commentform
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+  .comment-form-author, .comment-form-email, .comment-form-comment
+    width: calc((100% - 50px)/2)
+    border-bottom: 1px solid $grey_text_color
+
+  .comment-form-comment
+    width: 100%
+
+  input[type="email"], input[type="text"], textarea
+    width: 170px
+
+    border: none
+    border-radius: unset
+
+    &::placeholder
+      padding-top: 15px
+
+      font-size: 0.75rem
+      font-style: italic
+
+  input[type="submit"]
+    padding: 20px 35px
+    margin: 45px 0 70px
+    border: none
+    border-radius: unset
+    background-color: $green_color
+
+    color: $primary
+    font-size: 0.9rem
+    letter-spacing: 0.1rem
+    font-family: 'PlayfairDisplay Bold',sans-serif
+    text-transform: uppercase
+
+  textarea
+    width: 100%
+    height: 40px
+    margin-top: 10px
+
+#reply-title
+  margin: 50px 0 30px 0
+
+  font-size: 1.2rem
+  font-family: 'PlayfairDisplay Bold'

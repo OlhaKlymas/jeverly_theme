@@ -1,0 +1,44 @@
+@import "fonts"
+@import "vars"
+@import "vendor/reset.css"
+
+@import "typography/body"
+@import "typography/text"
+@import "typography/blockquotes"
+@import "typography/table"
+
+html
+  box-sizing: border-box
+  font-size: 16px
+
+*, *::before, *::after
+  box-sizing: inherit
+
+body
+  background: $primary
+  font-family: 'Lato', sans-serif
+  color: $main_text_color
+
+#page
+  width: $content-width
+  margin: auto
+
+@import "blocks/header"
+@import "blocks/main_screen"
+@import "blocks/decor"
+@import "blocks/slider"
+@import "blocks/social"
+@import "blocks/news"
+@import "blocks/pagination"
+@import "blocks/post"
+@import "blocks/navigation"
+@import "blocks/comments"
+@import "blocks/footer"
+@import "blocks/footer_form"
+
+@import "media/header_min"
+@import "media/typography_min"
+@import "media/navigation_min"
+@import "media/comments_min"
+@import "media/comments_form_min"
+@import "media/footer_min"

@@ -1,0 +1,115 @@
+@media screen and (max-width: $note-bp)
+
+  #page
+    width: auto
+
+  header nav#site-navigation
+    padding-right: 50px
+
+    .menu-item-has-children > a:after
+      content: unset
+
+    .sub-menu
+      a
+        width: auto
+        &:after
+          content: unset
+
+      .sub-menu
+        position: relative
+        margin: 0
+        padding: 0
+
+        display: none
+        box-shadow: unset
+        transition: 0.5s
+
+        li a
+          font-size: 0.75rem
+
+      li.focus
+        & > a
+          border-color: $grey-text_color
+        & > .sub-menu
+          display: block
+
+  header .site-branding
+    width: auto
+    padding-left: 50px
+
+  .custom-logo-link
+    width: 30px
+
+@media screen and (max-width: $tablet-bp)
+  header nav#site-navigation a
+    padding: 15px 5px
+
+@media screen and (max-width: $mobile-bp)
+  header nav#site-navigation
+    width: auto
+    overflow: hidden
+    padding-right: 20px
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 30px
+
+    &:before
+      top: 65px
+      height: 10px
+      border-bottom: 1px solid $grey_text_color
+      border-top: 1px solid $grey_text_color
+
+    &:after
+      top: 55px
+      height: 1px
+      background-color: $grey_text_color
+
+    &.toggled
+      &:before
+        top: 60px
+        height: 1px
+        border-top: unset
+        transform: rotate(45deg)
+
+      &:after
+        top: 60px
+        transform: rotate(-45deg)
+
+    .menu-toggle
+      width: 30px
+      height: 30px
+      opacity: 0
+
+    .nav-menu>.menu-item-has-children>a
+      width: 100%
+    #primary-menu
+      position: absolute
+      z-index: 999
+      left: 0
+      width: 100%
+      padding: 20px
+      margin-top: 30px
+
+      background-color: $green_color
+
+      a
+        padding: 10px
+        color: $primary
+
+      .sub-menu
+        position: relative
+        box-shadow: unset
+        width: 100%
+        display: none
+
+      li.focus
+        & > a
+          border-color: $grey-text_color
+        & > .sub-menu
+          display: block
+
+
+  header .site-branding
+    padding-left: 20px

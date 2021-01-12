@@ -1,0 +1,54 @@
+blockquote.wp-block-quote
+  position: relative
+  margin: 15px 0 15px 50px
+  padding-left: 30px
+  border-left: 1px solid $grey_text_color
+
+  p
+    font-size: $small_text
+    font-family: 'PlayfairDisplay Bold', sans-serif
+    color: $green_color
+
+  cite
+    display: inline-block
+    padding-top: 10px
+    color: $grey_text_color
+
+  &.is-style-large
+    position: relative
+    padding: 20px 20px 20px 90px
+
+    background-color: $green_color
+    border: none
+
+    p
+      padding: 10px 0
+      color: $primary
+      font-size: 1.2rem
+      font-family: 'PlayfairDisplay Regular', sans-serif
+      font-style: unset
+      line-height: 1.4
+
+    cite
+      padding: 10px 0
+      color: $primary
+
+    &:before
+      content: ''
+      position: absolute
+      width: 1px
+      height: calc(100% - 40px)
+      background-color: $primary
+      left: 75px
+
+    &:after
+      content: '“'
+      position: absolute
+      top: 24px
+      left: 16px
+      width: auto
+      height: auto
+
+      font-size: 7rem
+      color: $primary
+      font-family: 'Lato-Italic', sans-serif

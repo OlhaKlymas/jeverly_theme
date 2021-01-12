@@ -1,0 +1,45 @@
+.footer__right
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+  form p
+    position: relative
+
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+
+    border-bottom: 1px solid $grey_text_color
+
+    &:before
+      content: url("../images/mail.png")
+      position: absolute
+      left: -35px
+      width: 20px
+      height: 16px
+
+    input[type="email"]
+      width: 170px
+
+      border: none
+      border-radius: unset
+
+      &::placeholder
+        font-size: 0.75rem
+        font-style: italic
+
+    input[type="submit"]
+      border: none
+      border-radius: unset
+      background-color: transparent
+
+      font-size: 1rem
+      font-family: 'PlayfairDisplay Bold',sans-serif
+
+    .ajax-loader
+      display: none
+    .wpcf7-not-valid-tip
+      font-size: 12px

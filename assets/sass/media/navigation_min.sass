@@ -1,0 +1,35 @@
+@media screen and (max-width: $note-bp)
+  .post-navigation .nav-links, .pagination .nav-links
+    width: 100%
+
+  .pagination .nav-links
+    justify-content: center
+
+  .post-navigation .nav-links
+    flex-direction: column
+
+    .nav-previous
+      margin-bottom: 20px
+
+    .nav-next, .nav-previous
+      max-width: 100%
+      width: 100%
+      padding: 0 50px
+
+    .nav-next:after
+      right: 68px
+
+    .nav-previous:after
+      left: 68px
+
+@media screen and (max-width: $mobile-bp)
+  .post-navigation .nav-links
+    .nav-next
+      padding: 0 20px
+      &:after
+        right: 38px
+
+    .nav-previous
+      padding: 0 20px
+      &:after
+        left: 38px

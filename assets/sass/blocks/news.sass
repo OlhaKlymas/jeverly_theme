@@ -1,0 +1,86 @@
+article.post
+  .title-full-post
+    display: none
+
+  .post-thumbnail
+    width: 100%
+    height: 255px
+
+    display: flex
+    overflow: hidden
+
+    img
+      object-fit: cover
+
+  .entry-header
+    padding: 20px 0
+
+    display: block
+
+    .entry-meta
+      font-family: 'Lato-Italic', sans-serif
+
+      a
+        font-size: 1rem
+        color: inherit
+        text-decoration: none
+        font-family: inherit
+
+    .entry-title
+      padding: 25px 0
+
+      font-size: 1.95rem
+      font-family: 'PlayfairDisplay Regular', sans-serif
+
+      a
+        position: relative
+
+        color: $main_text_color
+        text-decoration: none
+
+        &:after
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          height: 100%
+          border-bottom: 1px solid
+
+  .entry-content
+    height: 70px
+    margin: 0
+    padding: 0
+    overflow: hidden
+
+    color: $grey_text_color
+    font-size: $small_x_text
+    line-height: 1.5
+
+  .entry-footer
+    margin-bottom: 50px
+    padding: 0
+
+    a
+      margin: 25px 0 50px 0
+      padding: 20px 45px
+
+      display: inline-block
+      background-color: $green_color
+
+      font-size: 0.75rem
+      font-family: 'PlayfairDisplay Regular', sans-serif
+      text-transform: uppercase
+      text-decoration: none
+      color: $primary
+      letter-spacing: 0.1rem
+
+  &:last-of-type
+    hr.post-hr, .title-full-post
+      display: none
+
+  &:first-child
+    .entry-header, .entry-content, .entry-footer
+      padding-left: 45px
+      padding-right: 45px
+      background-color: $grey_bg

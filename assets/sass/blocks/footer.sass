@@ -1,0 +1,44 @@
+footer
+  hr.footer-hr
+    position: relative
+    margin: 0
+    &:last-of-type
+      top: 5px
+
+  .footer__wrap
+    margin: 45px 0 70px
+
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+    .footer__left
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+
+      .footer__social
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+
+        a
+          padding: 15px
+
+          color: inherit
+          text-decoration: none
+          font-size: 0.65rem
+          letter-spacing: 0.1rem
+          text-transform: uppercase
+          font-family: 'PlayfairDisplay Regular',sans-serif
+
+          &:hover
+            background-color: $green_color
+            color: $primary
+
+      .footer__logo
+        width: 90px
